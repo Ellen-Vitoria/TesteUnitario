@@ -28,4 +28,10 @@ class CalculadoraTest {
         c.setNum1(100); c.setNum2(25);
         assertEquals(4, c.divisao());
     }
+
+    @Test
+    void testaDivisaoPorZero() {
+        c.setNum1(32); c.setNum2(0);
+        assertEquals(-1, c.divisao());
+    }
 }
