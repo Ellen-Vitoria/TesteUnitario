@@ -20,15 +20,20 @@ public class Calculadora {
 
     //Métodos para cada Operação Matemática
     public int adicao(){
-        return num1+num1+num2;
+        return num1+num2;
     }
     public int subtracao(){
-        return num1-num1-num2;
+        return num1-num2;
     }
     public int multiplicacao(){
-        return num1*num1*num2;
+        return num1*num2;
     }
-    public int divisao(){
-        return num1/num1/num2;
+    public int divisao() {
+        if (num2 != 0) {
+            return num1/num2;
+        }
+        else{
+            return -1;
+        }
     }
 }
